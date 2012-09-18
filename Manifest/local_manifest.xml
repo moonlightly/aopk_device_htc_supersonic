@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="moonlighyly/android_vendor_htc_supersonic.git" path="vendor/htc/supersonic" revision="jellybean" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display" />
+  <project name="Evervolv/android_hardware_qcom_display.git" path="hardware/qcom/display" revision="jellybean" />
+  <project name="Evervolv/android_hardware_qcom_camera.git" path="hardware/qcom/camera" revision="jellybean" />
+  <project name="jmztaylor/android_device_htc_qsd8k-common.git" path="device/htc/qsd8k-common" revision="jellybean"/>
+  <remove-project name="CyanogenMod/android_frameworks_base" />
+  <project name="jmztaylor/android_frameworks_base.git" path="frameworks/base" revision="jellybean" />
+</manifest>

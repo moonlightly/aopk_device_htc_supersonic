@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License")
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<device name="Android">
+  <item name="none">0</item>
+  <item name="bluetooth.active">142</item> <!-- In call -->
+  <item name="bluetooth.on">1.4</item>
+  <!-- CPU wakelock held for 830ms on bluetooth headset at command. 43mA * 830 -->
+  <item name="bluetooth.at">35690</item>
+  <item name="screen.on">100</item>
+  <item name="screen.full">160</item>
+  <item name="wifi.on">2.9</item>
+  <item name="wifi.active">120</item>
+  <item name="wifi.scan">220</item>
+  <item name="dsp.audio">88</item>
+  <item name="dsp.video">88</item>
+  <item name="gps.on">170</item>
+  <item name="radio.active">300</item>
+  <item name="radio.scanning">70</item>
+  <array name="radio.on"> <!-- Strength 0 to BINS-1 (4) -->
+      <value>3</value>
+  </array>
+      <!-- Different CPU speeds as reported in
+       /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state -->
+  <array name="cpu.speeds">
+      <value>128000</value>  <!--  128 MHz -->
+      <value>245000</value>  <!--  245 MHz -->
+      <value>384000</value>  <!--  384 MHz -->
+      <value>422000</value>  <!--  422 MHz -->
+      <value>460000</value>  <!--  460 MHz -->
+      <value>499000</value>  <!--  499 MHz -->
+      <value>537000</value>  <!--  537 MHz -->
+      <value>576000</value>  <!--  576 MHz -->
+      <value>614000</value>  <!--  614 MHz -->
+      <value>652000</value>  <!--  652 MHz -->
+      <value>691000</value>  <!--  691 MHz -->
+      <value>729000</value>  <!--  729 MHz -->
+      <value>768000</value>  <!--  768 MHz -->
+      <value>806000</value>  <!--  806 MHz -->
+      <value>844000</value>  <!--  844 MHz -->
+      <value>883000</value>  <!--  883 MHz -->
+      <value>921000</value>  <!--  921 MHz -->
+      <value>960000</value>  <!--  960 MHz -->
+      <value>998000</value>  <!--  998 MHz -->
+      <value>1036000</value> <!-- 1.03 GHz -->
+      <value>1075000</value> <!-- 1.07 GHz -->
+      <value>1113000</value> <!-- 1.11 GHz -->
+      <value>1152000</value> <!-- 1.15 GHz -->
+      <value>1190000</value> <!-- 1.19 GHz -->
+      <value>1228000</value> <!-- 1.22 GHz -->
+      <value>1267000</value> <!-- 1.26 GHz -->
+  </array>
+  <!-- Power consumption when CPU is idle -->
+  <item name="cpu.idle">3.8</item>
+  <item name="cpu.awake">54.6</item>
+  <!-- Power consumption at different speeds -->
+  <array name="cpu.active">
+      <value>100</value>  <!--  128 MHz -->
+      <value>106</value> <!--  245 MHz -->
+      <value>115</value> <!--  384 MHz -->
+      <value>118</value> <!--  422 MHz -->
+      <value>121</value> <!--  460 MHz -->
+      <value>123</value> <!--  499 MHz -->
+      <value>124</value> <!--  537 MHz -->
+      <value>125</value> <!--  576 MHz -->
+      <value>127</value> <!--  614 MHz -->
+      <value>129</value> <!--  652 MHz -->
+      <value>132</value> <!--  691 MHz -->
+      <value>135</value> <!--  729 MHz -->
+      <value>139</value> <!--  768 MHz -->
+      <value>141</value> <!--  806 MHz -->
+      <value>144</value> <!--  844 MHz -->
+      <value>147</value> <!--  883 MHz -->
+      <value>146</value> <!--  921 MHz -->
+      <value>149</value> <!--  960 MHz -->
+      <value>152</value> <!--  998 MHz -->
+      <value>154</value> <!-- 1.03 GHz -->
+      <value>156</value> <!-- 1.07 GHz -->
+      <value>158</value> <!-- 1.11 GHz -->
+      <value>160</value> <!-- 1.15 GHz -->
+      <value>162</value> <!-- 1.19 GHz -->
+      <value>164</value> <!-- 1.22 GHz -->
+      <value>168</value> <!-- 1.26 GHz -->
+  </array>
+  <!-- This is the battery capacity in mAh -->
+  <item name="battery.capacity">1500</item>
+</device>
